@@ -9,13 +9,12 @@
 (def lena (Imgcodecs/imread "img/lena.jpg"))
 (def frame (new JFrame))
 
-(defn mat->buffered-image [mat & [image]]
+(defn mat->buffered-image [mat]
   (let [gray? (= (.channels mat) 1)
         type (if gray?
                BufferedImage/TYPE_BYTE_GRAY
                BufferedImage/TYPE_3BYTE_BGR)
-        image (or image
-                  (new BufferedImage (.width mat) (.height mat) type))
+        image (new BufferedImage (.width mat) (.height mat) type)
         target-pixels (-> image
                           (.getRaster)
                           (.getDataBuffer)
@@ -44,9 +43,8 @@
   (when close-operation
     (.setDefaultCloseOperation frame close-operation)))
 
-(defn color->gray [mat & [gray-mat]]
-  (let [gray-mat (or gray-mat
-                     (Mat. (.height mat) (.width mat) CvType/CV_8UC1))]
+(defn color->gray [mat]
+  (let [gray-mat (new Mat)]
     (Imgproc/cvtColor lena gray-mat Imgproc/COLOR_RGB2GRAY)
     gray-mat))
 

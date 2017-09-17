@@ -9,7 +9,7 @@ A Clojure project to use opencv and swing.
 For ubuntu16.10.
 
 ```
-sudo apt-install cmake ant openjdk-8-jdk
+sudo apt install cmake ant openjdk-8-jdk
 mkdir gitprojects
 cd gitprojects
 git clone git@github.com:opencv/opencv.git opencv_source

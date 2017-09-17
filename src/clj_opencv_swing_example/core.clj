@@ -45,7 +45,7 @@
 
 (defn color->gray [mat]
   (let [gray-mat (new Mat)]
-    (Imgproc/cvtColor lena gray-mat Imgproc/COLOR_RGB2GRAY)
+    (Imgproc/cvtColor mat gray-mat Imgproc/COLOR_RGB2GRAY)
     gray-mat))
 
 (defn -main []

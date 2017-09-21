@@ -60,3 +60,4 @@ Distributed under the Eclipse Public License either version 1.0 or (at your opti
 - [how to show imagebuffer to jframe](http://stackoverflow.com/questions/299495/how-to-add-an-image-to-a-jpanel)
 - [ImShow-Java-OpenCV](https://github.com/master-atul/ImShow-Java-OpenCV/blob/master/ImShow_JCV/src/com/atul/JavaOpenCV/Imshow.java)
 - [content pane remove all](http://stackoverflow.com/questions/9347076/how-to-remove-all-components-from-a-jframe-in-java)
+- [clojureでopencv3.2を呼び出し、javax.swingで画像を表示する方法](http://asukiaaa.blogspot.jp/2017/04/clojureopencv32javaxswing.html)

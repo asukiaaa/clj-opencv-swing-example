@@ -10,9 +10,9 @@ For ubuntu16.10.
 
 ```
 sudo apt install cmake ant openjdk-8-jdk
-mkdir gitprojects
-cd gitprojects
-git clone git@github.com:opencv/opencv.git opencv_source
+mkdir ~/gitprojects
+cd ~/gitprojects
+git clone https://github.com/opencv/opencv.git opencv_source
 cd opencv_source
 git checkout tags/3.2.0
 # git fetch -p # if you cannot find 3.2.0 tag
